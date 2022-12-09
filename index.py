@@ -29,8 +29,8 @@ def predict():
     output = prediction[0]
     return jsonify(output)
 
-if __name__ == '__main__':
-    try:
-        app.run(port=5000, debug=True)
-    except:
-        print("Server is exited unexpectedly. Please contact server admin.")
+# if __name__ == '__main__':
+#     try:
+#         app.run(port=5000, debug=True)
+#     except:
+#         print("Server is exited unexpectedly. Please contact server admin.")
