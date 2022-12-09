@@ -9,8 +9,6 @@ the results in JSON format.
 import numpy as np
 from flask import Flask, request, jsonify
 import pickle
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 
 app = Flask(__name__)
 
@@ -28,9 +26,3 @@ def predict():
     # Take the first value of prediction
     output = prediction[0]
     return jsonify(output)
-
-# if __name__ == '__main__':
-#     try:
-#         app.run(port=5000, debug=True)
-#     except:
-#         print("Server is exited unexpectedly. Please contact server admin.")
