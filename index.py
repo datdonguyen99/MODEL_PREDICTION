@@ -9,6 +9,8 @@ the results in JSON format.
 import numpy as np
 from flask import Flask, request, jsonify
 import pickle
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 app = Flask(__name__)
 
